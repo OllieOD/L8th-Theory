@@ -11,7 +11,9 @@ namespace L8th_Theory
     {
         static void Main(string[] args)
         {
-            RLE();
+            //RLE();
+            Console.WriteLine(Encryption.Decrypt("khoor", 3));
+
         }
         static void RLE()
         {
