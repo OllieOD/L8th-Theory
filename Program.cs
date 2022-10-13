@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Versioning;
@@ -12,7 +13,9 @@ namespace L8th_Theory
         static void Main(string[] args)
         {
             //RLE();
-            Console.WriteLine(Encryption.Decrypt("khoor", 3));
+            
+            byte[] final = Encryption.VernamE("hello");
+            Console.WriteLine(string.Join(", ", final));
 
         }
         static void RLE()
