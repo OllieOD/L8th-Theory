@@ -15,7 +15,7 @@ namespace L8th_Theory
             //RLE();
             
             byte[] final = Encryption.VernamE("hello");
-            Console.WriteLine(string.Join(", ", final));
+            Console.WriteLine("ASCII = {0}" ,string.Join(", ", final));
 
         }
         static void RLE()

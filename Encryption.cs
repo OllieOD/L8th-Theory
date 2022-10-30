@@ -76,6 +76,12 @@ namespace L8th_Theory
             {
                 final[i] = (byte)(arr[i] ^ str[i]);
             }
+            string output = "";
+            for (int x = 0; x<l; x++)
+            {
+                output = output + Convert.ToChar(final[x]);
+            }
+            Console.WriteLine("String = {0}", output);
             return final;
                 
         }
